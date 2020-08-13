@@ -1,4 +1,4 @@
-function vacantion(groupOfPeople, typeOfGroup, dayOfWeek) {
+function vacation(groupOfPeople, typeOfGroup, dayOfWeek) {
     let price = 0;
 
     switch (typeOfGroup) {
@@ -64,10 +64,12 @@ function vacantion(groupOfPeople, typeOfGroup, dayOfWeek) {
 }
 
 
+// vacation(30,
+//     "Students",
+//     "Sunday"
+// )
 
-vacantion(40, `Regular`, `Saturday`)
-
-
-//30,     Total price: {price}
-//Students
-//Sunday
+vacation(40,
+    "Regular",
+    "Saturday"
+)
