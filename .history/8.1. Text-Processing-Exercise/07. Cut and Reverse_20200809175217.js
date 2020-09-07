@@ -5,13 +5,13 @@ function solve(str) {
     let leftSize = str.substr(0, halfIndex)
     let rightSize = str.substr(halfIndex)
 
-    let reverseStr = ((x) => {
+    let reversetString = ((x) => {
         const word = x.split('').reverse().join('')
         output.push(word);
     });
 
-    reverseStr(leftSize)
-    reverseStr(rightSize)
+    reversetString(leftSize)
+    reversetString(rightSize)
 
     console.log(output.join('\n'))
 }
