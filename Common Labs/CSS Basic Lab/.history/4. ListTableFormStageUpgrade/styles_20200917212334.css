@@ -1,0 +1,25 @@
+/* body>div>h1,
+p {
+    text-align: center;
+} */
+
+div {
+    margin: 1%;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: darkviolet;
+}
+
+li {
+    border: 4px solid;
+    border-color: yellow;
+}

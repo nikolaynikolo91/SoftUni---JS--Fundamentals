@@ -1,0 +1,21 @@
+div:nth-child(1) {
+
+
+    text-align: center;
+
+}
+
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: darkviolet;
+}
+
+li {
+    border: 4px solid;
+    border-color: yellow;
+}
+

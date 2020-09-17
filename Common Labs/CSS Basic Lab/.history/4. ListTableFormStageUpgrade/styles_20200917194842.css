@@ -1,0 +1,17 @@
+body>div>h1,
+p {
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: darkviolet;
+}
+
+li {
+    border: 4px solid;
+    border-color: yellow;
+}
