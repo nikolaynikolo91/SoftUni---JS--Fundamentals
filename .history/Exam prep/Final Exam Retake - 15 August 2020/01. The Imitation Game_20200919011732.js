@@ -26,16 +26,14 @@ function solve(input) {
     }
 
     function changeAll(subStr, replacement) {
-        if (myStr.includes(subStr)) {
-            //   let pattern = RegExp(subStr, 'g');
-            let exp = String.fromCharCode(92);
-            let regex = `/[`
-            myStr = myStr.replace(`/\\${subStr}]/g`, replacement)
-        }
-
-        // while (myStr.includes(subStr)) {
-        //     myStr = myStr.replace(pattern, replacement);
+        // if (myStr.includes(subStr)) {
+        //     let pattern = RegExp(subStr, 'g');
+        //     myStr = myStr.replace(pattern, replacement)
         // }
+
+        while (myStr.includes(subStr)) {
+            myStr = myStr.replace(pattern, replacement);
+        }
     }
 
     function insert(index, value) {

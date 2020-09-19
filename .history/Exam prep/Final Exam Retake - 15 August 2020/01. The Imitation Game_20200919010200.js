@@ -27,10 +27,8 @@ function solve(input) {
 
     function changeAll(subStr, replacement) {
         if (myStr.includes(subStr)) {
-            //   let pattern = RegExp(subStr, 'g');
-            let exp = String.fromCharCode(92);
-            let regex = `/[`
-            myStr = myStr.replace(`/\\${subStr}]/g`, replacement)
+            // let pattern = RegExp(subStr, 'g');
+            myStr = myStr.replace(`[${pattern}]`/g, replacement)
         }
 
         // while (myStr.includes(subStr)) {

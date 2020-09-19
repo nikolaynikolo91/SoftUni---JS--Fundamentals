@@ -26,16 +26,14 @@ function solve(input) {
     }
 
     function changeAll(subStr, replacement) {
-        if (myStr.includes(subStr)) {
-            //   let pattern = RegExp(subStr, 'g');
-            let exp = String.fromCharCode(92);
-            let regex = `/[`
-            myStr = myStr.replace(`/\\${subStr}]/g`, replacement)
-        }
+        // if (myStr.includes(subStr)) {                        
+        //     let pattern = RegExp(subStr, 'g');               
+        //     myStr = myStr.replace(pattern, replacement)      
+        // }                                                    
 
-        // while (myStr.includes(subStr)) {
-        //     myStr = myStr.replace(pattern, replacement);
-        // }
+        while (myStr.includes(subStr)) {
+            myStr = myStr.replace(pattern, replacement);
+        }
     }
 
     function insert(index, value) {
@@ -58,9 +56,9 @@ function solve(input) {
 }
 
 solve(['zzHe',
-    'ChangeAll|z|l',
-    'Insert|2|o',
-    'Move|3',
+    'ChangeAll|zz|l',
+    //'Insert|2|o',
+    // 'Move|3',
     'Decode'
 ])
 

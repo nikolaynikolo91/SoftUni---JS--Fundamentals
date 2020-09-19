@@ -29,8 +29,8 @@ function solve(input) {
         if (myStr.includes(subStr)) {
             //   let pattern = RegExp(subStr, 'g');
             let exp = String.fromCharCode(92);
-            let regex = `/[`
-            myStr = myStr.replace(`/\\${subStr}]/g`, replacement)
+            let regex = `/[${exp}${subStr}]/g`
+            myStr = myStr.replace(`/[${exp}${subStr}]/g`, replacement)
         }
 
         // while (myStr.includes(subStr)) {
