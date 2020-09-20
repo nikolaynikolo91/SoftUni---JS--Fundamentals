@@ -9,7 +9,7 @@ function solve(input) {
         } else {
             switch (cmd) {
                 case 'Add Stop':
-                    if (index1 >= 0 && index1 <= str.length) {
+                    if (index1 >= 0 && index1 <= str.length) { // str.length =
                         let arr = str.split('');
                         arr.splice(+index1, 0, index2);
                         str = arr.join('');
@@ -22,16 +22,28 @@ function solve(input) {
                         let end = +index2;
                         str = str.split('');
                         str = [...str.slice(0, start), ...str.slice(end + 1)]
+                        //  allLocations.splice(startIndex, endIndex - startIndex + 1);
+                        11, 16 - 12
                         str = str.join('');
                     }
                     break;
                 case 'Switch':
-                    str = str.replace(index1, index2)
+                //    let rgx = new RegExp(index1, 'g');
+                  //  str = str.replace(rgx, index2);
+
+                    let oldString = index1;
+                    let newString = index2;
+                    let offset = 0;
+                    while (str.indexOf(oldString, offset) >= 0) {
+                        str = str.replace(oldString, (oldString, offset) => newString);
+                        offset = str.indexOf(oldString, offset) + newString.length;
+                    }
+                    
                     break;
                 default:
                     break;
             }
-            console.log(str)
+            console.log(str) // console.log
         }
     }
 
