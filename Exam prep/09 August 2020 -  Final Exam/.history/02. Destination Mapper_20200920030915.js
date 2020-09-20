@@ -2,7 +2,7 @@ function solve(input) {
 
     let points = 0;
     let output = [];
-    let pattern = /(=|\/)([A-Z]{1}[A-Za-z]{2,})\1/g;
+    let pattern = /(=|\/)([A-Z][A-Za-z]{2,})\1/g;
     let secondPattern = /\w+/g;
 
     if (pattern.test(input)) {
@@ -15,6 +15,8 @@ function solve(input) {
 
     console.log(`Destinations: ${output.join(', ')}`)
     console.log(`Travel Points: ${points}`)
+
+
 }
 
 solve('=Hawai=/Cyprus/=Invalid/invalid==i5valid=/I5valid/=i=')
