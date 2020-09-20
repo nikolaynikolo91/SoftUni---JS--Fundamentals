@@ -2,7 +2,7 @@ function solve(input) {
 
     let points = 0;
     let output = [];
-    let pattern = /(=|\/)([A-Z]{1}\w{2,})\1/g;
+    let pattern = /(=|\/)([A-Z]{1}[\w]{2,})\1/g;
     let secondPattern = /\w+/g;
 
     if (pattern.test(input)) {
